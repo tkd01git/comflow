@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SocialFlow</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+<body>
+  <div class="wrap">
+
+    <div class="hero">
+      <div>
+        <div class="hero-eyebrow">SOCIAL FLOW</div>
+        <h1>Communication<br>Training</h1>
+      </div>
+    </div>
+
+    <!-- Nav -->
+    <div class="nav-tabs">
+      <button class="nav-tab active" data-page="train">
+        <span class="nav-icon">⚡</span>Train
+      </button>
+      <button class="nav-tab" data-page="review">
+        <span class="nav-icon">📖</span>Review
+      </button>
+    </div>
+
+    <!-- TRAIN PAGE -->
+    <div id="trainPage" class="page">
+      <div id="quizArea"></div>
+    </div>
+
+    <!-- REVIEW PAGE -->
+    <div id="reviewPage" class="page hidden">
+      <div class="filter-row">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="likeness">Likeness</button>
+        <button class="filter-btn" data-filter="control">Control</button>
+        <button class="filter-btn" data-filter="habit">Habit</button>
+      </div>
+      <div id="reviewList"></div>
+    </div>
+
+  </div>
+
+  <script src="./js/data.js"></script>
+  <script src="./js/app.js"></script>
+</body>
+</html>
